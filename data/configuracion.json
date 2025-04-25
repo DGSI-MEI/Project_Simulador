@@ -1,0 +1,43 @@
+{
+    "products": [
+      { "id": 1, "name": "kit_piezas", "type": "raw" },
+      { "id": 2, "name": "pcb", "type": "raw" },
+      { "id": 3, "name": "extrusor", "type": "raw" },
+      { "id": 4, "name": "cables_conexion", "type": "raw" },
+      { "id": 5, "name": "transformador_24v", "type": "raw" },
+      { "id": 6, "name": "enchufe_schuko", "type": "raw" },
+      { "id": 7, "name": "sensor_autonivel", "type": "raw" },
+      { "id": 10, "name": "P3D-Tester", "type": "finished" },
+      { "id": 11, "name": "P3D-Classic", "type": "finished" },
+      { "id": 12, "name": "P3D-Pro", "type": "finished" }
+    ],
+    "boms": [
+      { "finished_product_id": 10, "material_id": 1, "quantity": 1 },
+      { "finished_product_id": 10, "material_id": 2, "quantity": 1 },
+      { "finished_product_id": 10, "material_id": 3, "quantity": 1 },
+      
+      { "finished_product_id": 11, "material_id": 1, "quantity": 1 },
+      { "finished_product_id": 11, "material_id": 2, "quantity": 1 },
+      { "finished_product_id": 11, "material_id": 3, "quantity": 1 },
+      { "finished_product_id": 11, "material_id": 4, "quantity": 2 },
+      { "finished_product_id": 11, "material_id": 5, "quantity": 1 },
+      { "finished_product_id": 11, "material_id": 6, "quantity": 1 },
+  
+      { "finished_product_id": 12, "material_id": 1, "quantity": 1 },
+      { "finished_product_id": 12, "material_id": 2, "quantity": 1 },
+      { "finished_product_id": 12, "material_id": 3, "quantity": 1 },
+      { "finished_product_id": 12, "material_id": 7, "quantity": 1 },
+      { "finished_product_id": 12, "material_id": 4, "quantity": 3 },
+      { "finished_product_id": 12, "material_id": 5, "quantity": 1 },
+      { "finished_product_id": 12, "material_id": 6, "quantity": 1 }
+    ],
+    "suppliers": [
+      { "id": 1, "name": "Proveedor A", "product_id": 1, "unit_cost": 10.0, "lead_time": 2 },
+      { "id": 2, "name": "Proveedor B", "product_id": 2, "unit_cost": 12.0, "lead_time": 3 },
+      { "id": 3, "name": "Proveedor C", "product_id": 3, "unit_cost": 8.0, "lead_time": 1 },
+      { "id": 4, "name": "Proveedor D", "product_id": 4, "unit_cost": 5.0, "lead_time": 1 },
+      { "id": 5, "name": "Proveedor E", "product_id": 5, "unit_cost": 7.5, "lead_time": 2 },
+      { "id": 6, "name": "Proveedor F", "product_id": 6, "unit_cost": 3.0, "lead_time": 1 },
+      { "id": 7, "name": "Proveedor G", "product_id": 7, "unit_cost": 9.0, "lead_time": 2 }
+    ]
+  }
