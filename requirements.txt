@@ -1,3 +1,4 @@
 simpy
 pydantic
 streamlit
+matplotlib

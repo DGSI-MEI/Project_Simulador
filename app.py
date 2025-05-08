@@ -121,6 +121,22 @@ def calcular_faltantes():
             faltantes[pid] = req_qty - en_stock
     return faltantes
 
+
+def calcular_faltantes_by_order(order):
+    requerimientos = defaultdict(int)
+    if order.status in ("pending", "released"):
+        for bom in sim.boms:
+            if bom.finished_product_id == order.product_id:
+                requerimientos[bom.material_id] += bom.quantity * order.quantity
+
+    faltantes = {}
+    for pid, req_qty in requerimientos.items():
+        en_stock = sim.inventory.get(pid, 0)
+        if req_qty > en_stock:
+            faltantes[pid] = req_qty - en_stock
+    return faltantes
+
+
 # ===== Encabezado =====
 st.title("Simulador MRP - Producción Impresoras 3D")
 st.subheader(f"Día simulado: {sim.day} ({sim.current_date})")
@@ -143,35 +159,78 @@ if st.button("Avanzar Día"):
 st.markdown("## Pedidos Pendientes")
 for order in sim.orders:
     if order.status == "pending":
-        col1, col2 = st.columns([3, 1])
+        col1, col2, col3 = st.columns([3, 2, 3])
         with col1:
-            st.write(f"Pedido #{order.id} - Producto {order.product_id} - Cantidad: {order.quantity}")
+            product = next((p for p in sim.products if p.id == order.product_id), None)
+            product_name = product.name if product else "Desconocido"
+            st.write(f"Pedido #{order.id} - Producto {product_name} - Cantidad: {order.quantity}")
         with col2:
-            if st.button(f"Liberar pedido #{order.id}"):
-                order.status = "released"
-                sim.log_event("stock", f"Pedido #{order.id} liberado para producción.")
-                guardar_estado(sim)
-                st.rerun()
+            if st.button(f"Ver/Ocultar detalle #{order.id}", key=f"toggle_{order.id}"):
+                if f"detalle_visible_{order.id}" not in st.session_state:
+                    st.session_state[f"detalle_visible_{order.id}"] = False
+                    st.session_state[f"detalle_visible_{order.id}"] = False
+                    st.session_state[f"detalle_visible_{order.id}"] = False
+                st.session_state[f"detalle_visible_{order.id}"] = not st.session_state[f"detalle_visible_{order.id}"]
 
-st.markdown("## Materiales requeridos por pedido (BOM)")
-for order in sim.orders:
-    if order.status in ("pending", "released"):
-        st.markdown(f"**Pedido #{order.id} - Producto {order.product_id} - Cantidad: {order.quantity}**")
-        materiales = [b for b in sim.boms if b.finished_product_id == order.product_id]
-        for mat in materiales:
-            total_necesario = mat.quantity * order.quantity
-            st.write(f"- Material {mat.material_id}: {mat.quantity} por unidad → Total requerido: {total_necesario}")
+        if st.session_state.get(f"detalle_visible_{order.id}", False):
+            st.markdown("### Materiales requeridos por pedido (BOM)")
+            st.markdown(f"**Pedido #{order.id} - Producto {order.product_id} - Cantidad: {order.quantity}**")
+            materiales = [b for b in sim.boms if b.finished_product_id == order.product_id]
+            for mat in materiales:
+                total_necesario = mat.quantity * order.quantity
+                st.write(f"- Material {mat.material_id}: {mat.quantity} por unidad → Total requerido: {total_necesario}")
+        
+        with col3:
+            if faltantes := calcular_faltantes_by_order(order):
+                for pid, qty in faltantes.items():
+                    st.write(f"Material {pid}: faltan {qty} unidades")
+                    if st.button(f"Comprar materiales faltantes", key=f"comprar_{order.id}_{pid}"):
+                        st.markdown("## Emitir Orden de Compra")
+                        producto_seleccionado = pid
+                        proveedores_disponibles = [s for s in sim.suppliers if s.product_id == producto_seleccionado]
+                        nombres_proveedores = [f"{s.id} - {s.name} (Lead Time: {s.lead_time} días)" for s in proveedores_disponibles]
+                        proveedor_elegido_idx = st.selectbox("Proveedor", list(range(len(nombres_proveedores))), format_func=lambda i: nombres_proveedores[i], key=f"proveedor_{order.id}_{pid}")
+                        cantidad = st.number_input("Cantidad a comprar", min_value=qty, step=1, value=qty, key=f"cantidad_{order.id}_{pid}")
+
+                        if st.button("Emitir Orden", key=f"emitir_{order.id}_{pid}"):
+                            proveedor = proveedores_disponibles[proveedor_elegido_idx]
+                            fecha_entrega = sim.current_date + timedelta(days=proveedor.lead_time)
+                            nueva_oc = PurchaseOrder(
+                                id=len(sim.purchase_orders) + 1,
+                                supplier_id=proveedor.id,
+                                product_id=proveedor.product_id,
+                                quantity=cantidad,
+                                order_date=sim.current_date,
+                                expected_arrival=fecha_entrega,
+                                status="ordered"
+                            )
+                            sim.purchase_orders.append(nueva_oc)
+                            sim.log_event("purchase", f"Orden de compra creada: {cantidad} unidades del producto {proveedor.product_id} al proveedor {proveedor.name}.")
+                            guardar_estado(sim)
+                            st.success("Orden de compra emitida")
+                            st.rerun()
+            else:
+                if st.button(f"Liberar pedido #{order.id}"):
+                    order.status = "released"
+                    sim.log_event("stock", f"Pedido #{order.id} liberado para producción.")
+                    guardar_estado(sim)
+                    st.rerun()
 
 # ===== Panel Inventario =====
 st.markdown("## Inventario")
 st.markdown("### Materiales")
 for pid, qty in sim.inventory.items():
-    if pid != 10:
-        st.write(f"Material (ID {pid}): {qty} unidades")
+    product = next((p for p in sim.products if p.id == pid and p.type == "raw"), None)
+    if product:
+        st.write(f"{product.name} (ID {pid}): {qty} unidades")
+
 
 st.markdown("### Producto terminado")
-produccion = sim.inventory.get(10, 0)
-st.write(f"Producto terminado (ID 10): {produccion} unidades en almacén")
+for pid, qty in sim.inventory.items():
+    product = next((p for p in sim.products if p.id == pid and p.type == "finished"), None)
+    if product:
+        st.write(f"Producto terminado {product.name} (ID {pid}): {qty} unidades en almacén")
+
 
 st.markdown("### Debug: Órdenes y estado")
 for order in sim.orders:
