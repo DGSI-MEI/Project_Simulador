@@ -1,0 +1,143 @@
+{
+  "day": 3,
+  "current_date": "2025-04-27",
+  "inventory": {
+    "1": 18,
+    "2": 18,
+    "3": 20,
+    "4": 21,
+    "5": 16,
+    "6": 20,
+    "7": 13
+  },
+  "orders": [
+    {
+      "id": 1,
+      "creation_date": "2025-04-25",
+      "product_id": 11,
+      "quantity": 7,
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "creation_date": "2025-04-25",
+      "product_id": 12,
+      "quantity": 2,
+      "status": "pending"
+    },
+    {
+      "id": 3,
+      "creation_date": "2025-04-26",
+      "product_id": 10,
+      "quantity": 2,
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "creation_date": "2025-04-27",
+      "product_id": 12,
+      "quantity": 7,
+      "status": "pending"
+    }
+  ],
+  "purchase_orders": [
+    {
+      "id": 1,
+      "supplier_id": 4,
+      "product_id": 4,
+      "quantity": 10,
+      "order_date": "2025-04-25",
+      "expected_arrival": "2025-04-26",
+      "status": "received"
+    },
+    {
+      "id": 2,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 10,
+      "order_date": "2025-04-25",
+      "expected_arrival": "2025-04-27",
+      "status": "received"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "event_type": "purchase",
+      "sim_date": "2025-04-25",
+      "detail": "Orden de compra creada: 10 unidades del producto 4 al proveedor Proveedor D."
+    },
+    {
+      "id": 2,
+      "event_type": "purchase",
+      "sim_date": "2025-04-25",
+      "detail": "Orden de compra creada: 10 unidades del producto 1 al proveedor Proveedor A."
+    },
+    {
+      "id": 3,
+      "event_type": "purchase",
+      "sim_date": "2025-04-26",
+      "detail": "Llegaron 10 unidades del producto 4."
+    },
+    {
+      "id": 4,
+      "event_type": "stock",
+      "sim_date": "2025-04-26",
+      "detail": "Día 2 procesado."
+    },
+    {
+      "id": 5,
+      "event_type": "order",
+      "sim_date": "2025-04-26",
+      "detail": "Pedido automático generado: 2 unidades del producto P3D-Tester."
+    },
+    {
+      "id": 6,
+      "event_type": "purchase",
+      "sim_date": "2025-04-27",
+      "detail": "Llegaron 10 unidades del producto 1."
+    },
+    {
+      "id": 7,
+      "event_type": "stock",
+      "sim_date": "2025-04-27",
+      "detail": "Día 3 procesado."
+    },
+    {
+      "id": 8,
+      "event_type": "order",
+      "sim_date": "2025-04-27",
+      "detail": "Pedido automático generado: 7 unidades del producto P3D-Pro."
+    }
+  ],
+  "inventory_history": [
+    {
+      "1": 8,
+      "2": 18,
+      "3": 20,
+      "4": 21,
+      "5": 16,
+      "6": 20,
+      "7": 13
+    },
+    {
+      "1": 18,
+      "2": 18,
+      "3": 20,
+      "4": 21,
+      "5": 16,
+      "6": 20,
+      "7": 13
+    }
+  ],
+  "production_log": [
+    {
+      "date": "2025-04-26",
+      "produced": {}
+    },
+    {
+      "date": "2025-04-27",
+      "produced": {}
+    }
+  ]
+}
