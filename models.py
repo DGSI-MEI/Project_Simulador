@@ -29,6 +29,9 @@ class Order(BaseModel):
     product_id: int
     quantity: int
     status: Literal["pending","released", "in_production", "completed"]
+    delivery_date: Optional[date] = None  # ✅ nuevo campo
+    initial_quantity: Optional[int] = None
+
 
 class PurchaseOrder(BaseModel):
     id: int
@@ -41,6 +44,16 @@ class PurchaseOrder(BaseModel):
 
 class Event(BaseModel):
     id: int
-    event_type: Literal["production", "purchase", "stock", "order"]
     sim_date: date
-    detail: str
+    type: Literal["purchase", "stock", "order", "production"]
+    description: str
+
+    # Campos comunes opcionales
+    product_id: Optional[int] = None           # Material o producto terminado
+    order_id: Optional[int] = None             # ID de pedido de cliente
+    supplier_id: Optional[int] = None          # ID del proveedor si aplica
+    quantity: Optional[int] = None             # Cuántas unidades se ven afectadas
+
+    # Extra para información adicional (nombres, motivos, etc.)
+    extra: Optional[dict] = None
+
