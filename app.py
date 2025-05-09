@@ -88,7 +88,8 @@ def cargar_estado(sim):
 
 # ===== Simulación inicial =====
 env = simpy.Environment()
-sim = Simulator(env)    
+sim = Simulator(env)  
+st.set_page_config(layout="wide")
 
 # 1. Cargar configuración
 products, boms, suppliers = cargar_configuracion()
@@ -313,36 +314,37 @@ for order in sim.orders:
     col2.write(f"{product_name}")
     col3.write(f"{order.quantity} unidades")
 
-
-    # Evaluar retraso
     entrega = order.delivery_date.strftime("%Y-%m-%d") if order.delivery_date else "N/D"
     retrasado = order.delivery_date and sim.current_date > order.delivery_date
-
-    if retrasado:
-        col4.markdown(f"<span style='color:red;'>📅 {entrega} (retrasado)</span>", unsafe_allow_html=True)
-    else:
-        col4.markdown(f"📅 {entrega}")
+    col4.markdown(f"<span style='color:red;'>📅 {entrega} (retrasado)</span>" if retrasado else f"📅 {entrega}", unsafe_allow_html=True)
 
     if col5.button("🔍 Detalles", key=f"btn_detalle_{order.id}"):
         st.session_state[f"mostrar_detalle_{order.id}"] = not st.session_state.get(f"mostrar_detalle_{order.id}", False)
 
     if st.session_state.get(f"mostrar_detalle_{order.id}", False):
         st.markdown(f"### 📄 Detalles del Pedido #{order.id} - {product_name}")
-        fecha_entrega = order.delivery_date.strftime("%Y-%m-%d") if order.delivery_date else "No especificada"
-        st.markdown(f"📆 **Entrega estimada:** {fecha_entrega}")
-        # Obtener materiales del BOM para ese producto
+        st.markdown(f"📆 **Entrega estimada:** {entrega}")
+
+        # === Inventario neto descontando reservas de otros pedidos liberados ===
+        inventario_neto = sim.inventory.copy()
+        for o in sim.orders:
+            if o.status == "released" and o.id != order.id:
+                for bom in sim.boms:
+                    if bom.finished_product_id == o.product_id:
+                        inventario_neto[bom.material_id] -= bom.quantity * o.quantity
+
+        # === Lista de materiales requeridos ===
         materiales = [b for b in sim.boms if b.finished_product_id == order.product_id]
         bom_data = []
-
         for mat in materiales:
             total = mat.quantity * order.quantity
-            en_stock = sim.inventory.get(mat.material_id, 0)
+            en_stock = inventario_neto.get(mat.material_id, 0)
             faltan = max(0, total - en_stock)
             bom_data.append({
                 "Material ID": mat.material_id,
                 "Cantidad x unidad": mat.quantity,
                 "Total requerido": total,
-                "En inventario": en_stock,
+                "En inventario (neto)": en_stock,
                 "Faltan": faltan,
             })
 
@@ -350,14 +352,13 @@ for order in sim.orders:
         df_bom = pd.DataFrame(bom_data)
         st.dataframe(df_bom, use_container_width=True, hide_index=True)
 
-        # Mostrar sección para faltantes
+        # === Acciones para faltantes ===
         for item in bom_data:
             if item["Faltan"] > 0:
                 st.markdown(f"**🔧 Acción requerida: Material {item['Material ID']}**")
 
                 with st.expander(f"🛒 Comprar {item['Faltan']} unidades", expanded=False):
                     proveedores = [s for s in sim.suppliers if s.product_id == item["Material ID"]]
-
                     if not proveedores:
                         st.warning("⚠️ No hay proveedores disponibles para este material.")
                         continue
@@ -385,7 +386,7 @@ for order in sim.orders:
                             unit_cost=proveedor.unit_cost,
                             order_date=sim.current_date,
                             expected_arrival=sim.current_date + timedelta(days=proveedor.lead_time),
-                            status="ordered" 
+                            status="ordered"
                         )
                         sim.purchase_orders.append(nuevo_po)
                         sim.log_event("purchase", f"Pedido de compra generado: {item['Faltan']} x de Material (ID:{item['Material ID']}) al proveedor {proveedor.name}")
@@ -393,9 +394,9 @@ for order in sim.orders:
                         st.success(f"✅ Pedido de compra registrado con {proveedor.name}")
                         st.rerun()
 
-        # Si no hay faltantes, permitir liberar el pedido
-        faltantes = calcular_faltantes_by_order(order)
-        if not faltantes:
+        # === Evaluar liberación con inventario neto ===
+        puede_liberar = all(item["Faltan"] == 0 for item in bom_data)
+        if puede_liberar:
             if st.button(f"✅ Liberar pedido #{order.id}", key=f"liberar_{order.id}"):
                 order.status = "released"
                 sim.log_event("stock", f"Pedido #{order.id} liberado para producción.")
@@ -403,8 +404,6 @@ for order in sim.orders:
                 st.rerun()
 
         st.divider()
-
-
 
 
 
