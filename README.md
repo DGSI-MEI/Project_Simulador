@@ -108,7 +108,7 @@ streamlit run app.py
 ---
 
 ## Resultados
-- Puede observar los resultados de las pruebas [aquí](SimuladorProducciónImpresoras3D.pdf)
+- Puede observar los resultados de las pruebas [aquí](CapturaPantallaDelSimulador.pdf)
 
 ## Créditos
 Proyecto desarrollado para el MEI UPC - DGSI, 2025.
