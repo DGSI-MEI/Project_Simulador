@@ -1,43 +1,243 @@
 {
-  "day": 3,
-  "current_date": "2025-04-27",
+  "day": 24,
+  "current_date": "2025-06-01",
   "inventory": {
-    "1": 18,
-    "2": 18,
-    "3": 20,
-    "4": 21,
-    "5": 16,
-    "6": 20,
-    "7": 13
+    "1": 25,
+    "2": 104,
+    "3": 25,
+    "4": 66,
+    "5": 22,
+    "6": 22,
+    "7": 22,
+    "10": 30,
+    "11": 18,
+    "12": 24
   },
   "orders": [
     {
       "id": 1,
-      "creation_date": "2025-04-25",
-      "product_id": 11,
-      "quantity": 7,
-      "status": "pending"
+      "creation_date": "2025-05-09",
+      "product_id": 12,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-12",
+      "initial_quantity": 4
     },
     {
       "id": 2,
-      "creation_date": "2025-04-25",
-      "product_id": 12,
-      "quantity": 2,
-      "status": "pending"
+      "creation_date": "2025-05-09",
+      "product_id": 10,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-12",
+      "initial_quantity": 2
     },
     {
       "id": 3,
-      "creation_date": "2025-04-26",
-      "product_id": 10,
-      "quantity": 2,
-      "status": "pending"
+      "creation_date": "2025-05-10",
+      "product_id": 11,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-13",
+      "initial_quantity": 1
     },
     {
       "id": 4,
-      "creation_date": "2025-04-27",
+      "creation_date": "2025-05-11",
+      "product_id": 10,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-15",
+      "initial_quantity": 8
+    },
+    {
+      "id": 5,
+      "creation_date": "2025-05-12",
+      "product_id": 11,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-16",
+      "initial_quantity": 5
+    },
+    {
+      "id": 6,
+      "creation_date": "2025-05-13",
+      "product_id": 10,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-16",
+      "initial_quantity": 4
+    },
+    {
+      "id": 7,
+      "creation_date": "2025-05-14",
+      "product_id": 10,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-18",
+      "initial_quantity": 7
+    },
+    {
+      "id": 8,
+      "creation_date": "2025-05-15",
       "product_id": 12,
-      "quantity": 7,
-      "status": "pending"
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-18",
+      "initial_quantity": 3
+    },
+    {
+      "id": 9,
+      "creation_date": "2025-05-16",
+      "product_id": 12,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-19",
+      "initial_quantity": 3
+    },
+    {
+      "id": 10,
+      "creation_date": "2025-05-17",
+      "product_id": 12,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-21",
+      "initial_quantity": 5
+    },
+    {
+      "id": 11,
+      "creation_date": "2025-05-18",
+      "product_id": 10,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-22",
+      "initial_quantity": 5
+    },
+    {
+      "id": 12,
+      "creation_date": "2025-05-19",
+      "product_id": 12,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-23",
+      "initial_quantity": 7
+    },
+    {
+      "id": 13,
+      "creation_date": "2025-05-20",
+      "product_id": 10,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-23",
+      "initial_quantity": 4
+    },
+    {
+      "id": 14,
+      "creation_date": "2025-05-21",
+      "product_id": 11,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-24",
+      "initial_quantity": 3
+    },
+    {
+      "id": 15,
+      "creation_date": "2025-05-22",
+      "product_id": 11,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-25",
+      "initial_quantity": 4
+    },
+    {
+      "id": 16,
+      "creation_date": "2025-05-23",
+      "product_id": 11,
+      "quantity": 0,
+      "status": "completed",
+      "delivery_date": "2025-05-27",
+      "initial_quantity": 5
+    },
+    {
+      "id": 17,
+      "creation_date": "2025-05-24",
+      "product_id": 12,
+      "quantity": 4,
+      "status": "released",
+      "delivery_date": "2025-05-28",
+      "initial_quantity": 6
+    },
+    {
+      "id": 18,
+      "creation_date": "2025-05-25",
+      "product_id": 12,
+      "quantity": 6,
+      "status": "released",
+      "delivery_date": "2025-05-29",
+      "initial_quantity": 6
+    },
+    {
+      "id": 19,
+      "creation_date": "2025-05-26",
+      "product_id": 10,
+      "quantity": 1,
+      "status": "released",
+      "delivery_date": "2025-05-29",
+      "initial_quantity": 1
+    },
+    {
+      "id": 20,
+      "creation_date": "2025-05-27",
+      "product_id": 12,
+      "quantity": 3,
+      "status": "released",
+      "delivery_date": "2025-05-30",
+      "initial_quantity": 3
+    },
+    {
+      "id": 21,
+      "creation_date": "2025-05-28",
+      "product_id": 11,
+      "quantity": 6,
+      "status": "released",
+      "delivery_date": "2025-06-01",
+      "initial_quantity": 6
+    },
+    {
+      "id": 22,
+      "creation_date": "2025-05-29",
+      "product_id": 10,
+      "quantity": 5,
+      "status": "pending",
+      "delivery_date": "2025-06-02",
+      "initial_quantity": 5
+    },
+    {
+      "id": 23,
+      "creation_date": "2025-05-30",
+      "product_id": 12,
+      "quantity": 4,
+      "status": "pending",
+      "delivery_date": "2025-06-02",
+      "initial_quantity": 4
+    },
+    {
+      "id": 24,
+      "creation_date": "2025-05-31",
+      "product_id": 10,
+      "quantity": 6,
+      "status": "pending",
+      "delivery_date": "2025-06-04",
+      "initial_quantity": 6
+    },
+    {
+      "id": 25,
+      "creation_date": "2025-06-01",
+      "product_id": 10,
+      "quantity": 8,
+      "status": "pending",
+      "delivery_date": "2025-06-05",
+      "initial_quantity": 8
     }
   ],
   "purchase_orders": [
@@ -45,99 +245,3346 @@
       "id": 1,
       "supplier_id": 4,
       "product_id": 4,
-      "quantity": 10,
-      "order_date": "2025-04-25",
-      "expected_arrival": "2025-04-26",
+      "quantity": 5,
+      "order_date": "2025-05-11",
+      "expected_arrival": "2025-05-12",
       "status": "received"
     },
     {
       "id": 2,
       "supplier_id": 1,
       "product_id": 1,
+      "quantity": 2,
+      "order_date": "2025-05-11",
+      "expected_arrival": "2025-05-13",
+      "status": "received"
+    },
+    {
+      "id": 3,
+      "supplier_id": 2,
+      "product_id": 2,
+      "quantity": 2,
+      "order_date": "2025-05-11",
+      "expected_arrival": "2025-05-14",
+      "status": "received"
+    },
+    {
+      "id": 4,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 4,
+      "order_date": "2025-05-13",
+      "expected_arrival": "2025-05-15",
+      "status": "received"
+    },
+    {
+      "id": 5,
+      "supplier_id": 2,
+      "product_id": 2,
+      "quantity": 6,
+      "order_date": "2025-05-13",
+      "expected_arrival": "2025-05-16",
+      "status": "received"
+    },
+    {
+      "id": 6,
+      "supplier_id": 2,
+      "product_id": 2,
+      "quantity": 2,
+      "order_date": "2025-05-13",
+      "expected_arrival": "2025-05-16",
+      "status": "received"
+    },
+    {
+      "id": 7,
+      "supplier_id": 2,
+      "product_id": 2,
+      "quantity": 2,
+      "order_date": "2025-05-13",
+      "expected_arrival": "2025-05-16",
+      "status": "received"
+    },
+    {
+      "id": 8,
+      "supplier_id": 2,
+      "product_id": 2,
+      "quantity": 2,
+      "order_date": "2025-05-13",
+      "expected_arrival": "2025-05-16",
+      "status": "received"
+    },
+    {
+      "id": 9,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 4,
+      "order_date": "2025-05-13",
+      "expected_arrival": "2025-05-15",
+      "status": "received"
+    },
+    {
+      "id": 10,
+      "supplier_id": 2,
+      "product_id": 2,
+      "quantity": 6,
+      "order_date": "2025-05-13",
+      "expected_arrival": "2025-05-16",
+      "status": "received"
+    },
+    {
+      "id": 11,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 2,
+      "order_date": "2025-05-19",
+      "expected_arrival": "2025-05-21",
+      "status": "received"
+    },
+    {
+      "id": 12,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 2,
+      "order_date": "2025-05-19",
+      "expected_arrival": "2025-05-21",
+      "status": "received"
+    },
+    {
+      "id": 13,
+      "supplier_id": 3,
+      "product_id": 3,
+      "quantity": 5,
+      "order_date": "2025-05-19",
+      "expected_arrival": "2025-05-20",
+      "status": "received"
+    },
+    {
+      "id": 14,
+      "supplier_id": 3,
+      "product_id": 3,
+      "quantity": 5,
+      "order_date": "2025-05-19",
+      "expected_arrival": "2025-05-20",
+      "status": "received"
+    },
+    {
+      "id": 15,
+      "supplier_id": 4,
+      "product_id": 4,
       "quantity": 10,
-      "order_date": "2025-04-25",
-      "expected_arrival": "2025-04-27",
+      "order_date": "2025-05-19",
+      "expected_arrival": "2025-05-20",
+      "status": "received"
+    },
+    {
+      "id": 16,
+      "supplier_id": 4,
+      "product_id": 4,
+      "quantity": 10,
+      "order_date": "2025-05-19",
+      "expected_arrival": "2025-05-20",
+      "status": "received"
+    },
+    {
+      "id": 17,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 3,
+      "order_date": "2025-05-21",
+      "expected_arrival": "2025-05-23",
+      "status": "received"
+    },
+    {
+      "id": 18,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 44,
+      "order_date": "2025-05-23",
+      "expected_arrival": "2025-05-25",
+      "status": "received"
+    },
+    {
+      "id": 19,
+      "supplier_id": 2,
+      "product_id": 2,
+      "quantity": 41,
+      "order_date": "2025-05-23",
+      "expected_arrival": "2025-05-26",
+      "status": "received"
+    },
+    {
+      "id": 20,
+      "supplier_id": 3,
+      "product_id": 3,
+      "quantity": 44,
+      "order_date": "2025-05-23",
+      "expected_arrival": "2025-05-24",
+      "status": "received"
+    },
+    {
+      "id": 21,
+      "supplier_id": 4,
+      "product_id": 4,
+      "quantity": 68,
+      "order_date": "2025-05-23",
+      "expected_arrival": "2025-05-24",
+      "status": "received"
+    },
+    {
+      "id": 22,
+      "supplier_id": 5,
+      "product_id": 5,
+      "quantity": 20,
+      "order_date": "2025-05-23",
+      "expected_arrival": "2025-05-25",
+      "status": "received"
+    },
+    {
+      "id": 23,
+      "supplier_id": 6,
+      "product_id": 6,
+      "quantity": 29,
+      "order_date": "2025-05-23",
+      "expected_arrival": "2025-05-24",
+      "status": "received"
+    },
+    {
+      "id": 24,
+      "supplier_id": 7,
+      "product_id": 7,
+      "quantity": 6,
+      "order_date": "2025-05-23",
+      "expected_arrival": "2025-05-25",
+      "status": "received"
+    },
+    {
+      "id": 25,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-27",
+      "status": "received"
+    },
+    {
+      "id": 26,
+      "supplier_id": 2,
+      "product_id": 2,
+      "quantity": 53,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-28",
+      "status": "received"
+    },
+    {
+      "id": 27,
+      "supplier_id": 3,
+      "product_id": 3,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-26",
+      "status": "received"
+    },
+    {
+      "id": 28,
+      "supplier_id": 4,
+      "product_id": 4,
+      "quantity": 36,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-26",
+      "status": "received"
+    },
+    {
+      "id": 29,
+      "supplier_id": 5,
+      "product_id": 5,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-27",
+      "status": "received"
+    },
+    {
+      "id": 30,
+      "supplier_id": 6,
+      "product_id": 6,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-26",
+      "status": "received"
+    },
+    {
+      "id": 31,
+      "supplier_id": 7,
+      "product_id": 7,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-27",
+      "status": "received"
+    },
+    {
+      "id": 32,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-27",
+      "status": "received"
+    },
+    {
+      "id": 33,
+      "supplier_id": 2,
+      "product_id": 2,
+      "quantity": 53,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-28",
+      "status": "received"
+    },
+    {
+      "id": 34,
+      "supplier_id": 3,
+      "product_id": 3,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-26",
+      "status": "received"
+    },
+    {
+      "id": 35,
+      "supplier_id": 4,
+      "product_id": 4,
+      "quantity": 36,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-26",
+      "status": "received"
+    },
+    {
+      "id": 36,
+      "supplier_id": 5,
+      "product_id": 5,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-27",
+      "status": "received"
+    },
+    {
+      "id": 37,
+      "supplier_id": 6,
+      "product_id": 6,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-26",
+      "status": "received"
+    },
+    {
+      "id": 38,
+      "supplier_id": 7,
+      "product_id": 7,
+      "quantity": 12,
+      "order_date": "2025-05-25",
+      "expected_arrival": "2025-05-27",
+      "status": "received"
+    },
+    {
+      "id": 39,
+      "supplier_id": 1,
+      "product_id": 1,
+      "quantity": 3,
+      "order_date": "2025-05-30",
+      "expected_arrival": "2025-06-01",
+      "status": "received"
+    },
+    {
+      "id": 40,
+      "supplier_id": 3,
+      "product_id": 3,
+      "quantity": 3,
+      "order_date": "2025-05-30",
+      "expected_arrival": "2025-05-31",
       "status": "received"
     }
   ],
   "events": [
     {
       "id": 1,
-      "event_type": "purchase",
-      "sim_date": "2025-04-25",
-      "detail": "Orden de compra creada: 10 unidades del producto 4 al proveedor Proveedor D."
+      "sim_date": "2025-05-09",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 12,
+      "order_id": 1,
+      "supplier_id": null,
+      "quantity": 4,
+      "extra": {
+        "product_name": "P3D-Pro",
+        "delivery_date": "2025-05-12",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
     },
     {
       "id": 2,
-      "event_type": "purchase",
-      "sim_date": "2025-04-25",
-      "detail": "Orden de compra creada: 10 unidades del producto 1 al proveedor Proveedor A."
+      "sim_date": "2025-05-09",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 2,
+      "supplier_id": null,
+      "quantity": 2,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-05-12",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
     },
     {
       "id": 3,
-      "event_type": "purchase",
-      "sim_date": "2025-04-26",
-      "detail": "Llegaron 10 unidades del producto 4."
+      "sim_date": "2025-05-10",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 2
+      }
     },
     {
       "id": 4,
-      "event_type": "stock",
-      "sim_date": "2025-04-26",
-      "detail": "Día 2 procesado."
+      "sim_date": "2025-05-10",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 11,
+      "order_id": 3,
+      "supplier_id": null,
+      "quantity": 1,
+      "extra": {
+        "product_name": "P3D-Classic",
+        "delivery_date": "2025-05-13",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
     },
     {
       "id": 5,
-      "event_type": "order",
-      "sim_date": "2025-04-26",
-      "detail": "Pedido automático generado: 2 unidades del producto P3D-Tester."
+      "sim_date": "2025-05-10",
+      "type": "stock",
+      "description": "Pedido #2 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
     },
     {
       "id": 6,
-      "event_type": "purchase",
-      "sim_date": "2025-04-27",
-      "detail": "Llegaron 10 unidades del producto 1."
+      "sim_date": "2025-05-10",
+      "type": "stock",
+      "description": "Pedido #3 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
     },
     {
       "id": 7,
-      "event_type": "stock",
-      "sim_date": "2025-04-27",
-      "detail": "Día 3 procesado."
+      "sim_date": "2025-05-11",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 10,
+      "order_id": 2,
+      "supplier_id": null,
+      "quantity": 2,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 8
+      }
     },
     {
       "id": 8,
-      "event_type": "order",
-      "sim_date": "2025-04-27",
-      "detail": "Pedido automático generado: 7 unidades del producto P3D-Pro."
+      "sim_date": "2025-05-11",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 10,
+      "order_id": 2,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 9,
+      "sim_date": "2025-05-11",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 11,
+      "order_id": 3,
+      "supplier_id": null,
+      "quantity": 1,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 7
+      }
+    },
+    {
+      "id": 10,
+      "sim_date": "2025-05-11",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 11,
+      "order_id": 3,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 11,
+      "sim_date": "2025-05-11",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 3
+      }
+    },
+    {
+      "id": 12,
+      "sim_date": "2025-05-11",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 4,
+      "supplier_id": null,
+      "quantity": 8,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-05-15",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 13,
+      "sim_date": "2025-05-11",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 5 x de Material (ID:4) al proveedor Proveedor D",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 14,
+      "sim_date": "2025-05-11",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 2 x de Material (ID:1) al proveedor Proveedor A",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 15,
+      "sim_date": "2025-05-11",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 2 x de Material (ID:2) al proveedor Proveedor B",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 16,
+      "sim_date": "2025-05-12",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 4,
+      "order_id": null,
+      "supplier_id": 4,
+      "quantity": 5,
+      "extra": {
+        "purchase_order_id": 1,
+        "expected_arrival": "2025-05-12"
+      }
+    },
+    {
+      "id": 17,
+      "sim_date": "2025-05-12",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 4
+      }
+    },
+    {
+      "id": 18,
+      "sim_date": "2025-05-12",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 11,
+      "order_id": 5,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "product_name": "P3D-Classic",
+        "delivery_date": "2025-05-16",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 19,
+      "sim_date": "2025-05-12",
+      "type": "stock",
+      "description": "Pedido #1 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 20,
+      "sim_date": "2025-05-13",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 2,
+      "extra": {
+        "purchase_order_id": 2,
+        "expected_arrival": "2025-05-13"
+      }
+    },
+    {
+      "id": 21,
+      "sim_date": "2025-05-13",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 12,
+      "order_id": 1,
+      "supplier_id": null,
+      "quantity": 4,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 6
+      }
+    },
+    {
+      "id": 22,
+      "sim_date": "2025-05-13",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 12,
+      "order_id": 1,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 23,
+      "sim_date": "2025-05-13",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 5
+      }
+    },
+    {
+      "id": 24,
+      "sim_date": "2025-05-13",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 6,
+      "supplier_id": null,
+      "quantity": 4,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-05-16",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
+    },
+    {
+      "id": 25,
+      "sim_date": "2025-05-13",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 4 x de Material (ID:1) al proveedor Proveedor A",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 26,
+      "sim_date": "2025-05-13",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 6 x de Material (ID:2) al proveedor Proveedor B",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 27,
+      "sim_date": "2025-05-13",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 2 x de Material (ID:2) al proveedor Proveedor B",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 28,
+      "sim_date": "2025-05-13",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 2 x de Material (ID:2) al proveedor Proveedor B",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 29,
+      "sim_date": "2025-05-13",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 2 x de Material (ID:2) al proveedor Proveedor B",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 30,
+      "sim_date": "2025-05-13",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 4 x de Material (ID:1) al proveedor Proveedor A",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 31,
+      "sim_date": "2025-05-13",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 6 x de Material (ID:2) al proveedor Proveedor B",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 32,
+      "sim_date": "2025-05-14",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": 2,
+      "quantity": 2,
+      "extra": {
+        "purchase_order_id": 3,
+        "expected_arrival": "2025-05-14"
+      }
+    },
+    {
+      "id": 33,
+      "sim_date": "2025-05-14",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 6
+      }
+    },
+    {
+      "id": 34,
+      "sim_date": "2025-05-14",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 7,
+      "supplier_id": null,
+      "quantity": 7,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-05-18",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 35,
+      "sim_date": "2025-05-15",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 4,
+      "extra": {
+        "purchase_order_id": 4,
+        "expected_arrival": "2025-05-15"
+      }
+    },
+    {
+      "id": 36,
+      "sim_date": "2025-05-15",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 4,
+      "extra": {
+        "purchase_order_id": 9,
+        "expected_arrival": "2025-05-15"
+      }
+    },
+    {
+      "id": 37,
+      "sim_date": "2025-05-15",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 7
+      }
+    },
+    {
+      "id": 38,
+      "sim_date": "2025-05-15",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 12,
+      "order_id": 8,
+      "supplier_id": null,
+      "quantity": 3,
+      "extra": {
+        "product_name": "P3D-Pro",
+        "delivery_date": "2025-05-18",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
+    },
+    {
+      "id": 39,
+      "sim_date": "2025-05-16",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": 2,
+      "quantity": 6,
+      "extra": {
+        "purchase_order_id": 5,
+        "expected_arrival": "2025-05-16"
+      }
+    },
+    {
+      "id": 40,
+      "sim_date": "2025-05-16",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": 2,
+      "quantity": 2,
+      "extra": {
+        "purchase_order_id": 6,
+        "expected_arrival": "2025-05-16"
+      }
+    },
+    {
+      "id": 41,
+      "sim_date": "2025-05-16",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": 2,
+      "quantity": 2,
+      "extra": {
+        "purchase_order_id": 7,
+        "expected_arrival": "2025-05-16"
+      }
+    },
+    {
+      "id": 42,
+      "sim_date": "2025-05-16",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": 2,
+      "quantity": 2,
+      "extra": {
+        "purchase_order_id": 8,
+        "expected_arrival": "2025-05-16"
+      }
+    },
+    {
+      "id": 43,
+      "sim_date": "2025-05-16",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": 2,
+      "quantity": 6,
+      "extra": {
+        "purchase_order_id": 10,
+        "expected_arrival": "2025-05-16"
+      }
+    },
+    {
+      "id": 44,
+      "sim_date": "2025-05-16",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 8
+      }
+    },
+    {
+      "id": 45,
+      "sim_date": "2025-05-16",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 12,
+      "order_id": 9,
+      "supplier_id": null,
+      "quantity": 3,
+      "extra": {
+        "product_name": "P3D-Pro",
+        "delivery_date": "2025-05-19",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
+    },
+    {
+      "id": 46,
+      "sim_date": "2025-05-16",
+      "type": "stock",
+      "description": "Pedido #4 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 47,
+      "sim_date": "2025-05-16",
+      "type": "stock",
+      "description": "Pedido #6 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 48,
+      "sim_date": "2025-05-17",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 10,
+      "order_id": 4,
+      "supplier_id": null,
+      "quantity": 8,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 2
+      }
+    },
+    {
+      "id": 49,
+      "sim_date": "2025-05-17",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 10,
+      "order_id": 4,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 50,
+      "sim_date": "2025-05-17",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 10,
+      "order_id": 6,
+      "supplier_id": null,
+      "quantity": 1,
+      "extra": {
+        "pedido_restante": 3,
+        "capacidad_restante": 1
+      }
+    },
+    {
+      "id": 51,
+      "sim_date": "2025-05-17",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 9
+      }
+    },
+    {
+      "id": 52,
+      "sim_date": "2025-05-17",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 12,
+      "order_id": 10,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "product_name": "P3D-Pro",
+        "delivery_date": "2025-05-21",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 53,
+      "sim_date": "2025-05-18",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 10
+      }
+    },
+    {
+      "id": 54,
+      "sim_date": "2025-05-18",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 11,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-05-22",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 55,
+      "sim_date": "2025-05-19",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 11
+      }
+    },
+    {
+      "id": 56,
+      "sim_date": "2025-05-19",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 12,
+      "order_id": 12,
+      "supplier_id": null,
+      "quantity": 7,
+      "extra": {
+        "product_name": "P3D-Pro",
+        "delivery_date": "2025-05-23",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 57,
+      "sim_date": "2025-05-19",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 2 x de Material (ID:1) al proveedor Proveedor A",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 58,
+      "sim_date": "2025-05-19",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 2 x de Material (ID:1) al proveedor Proveedor A",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 59,
+      "sim_date": "2025-05-19",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 5 x de Material (ID:3) al proveedor Proveedor C",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 60,
+      "sim_date": "2025-05-19",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 5 x de Material (ID:3) al proveedor Proveedor C",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 61,
+      "sim_date": "2025-05-19",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 10 x de Material (ID:4) al proveedor Proveedor D",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 62,
+      "sim_date": "2025-05-19",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 10 x de Material (ID:4) al proveedor Proveedor D",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 63,
+      "sim_date": "2025-05-20",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 3,
+      "order_id": null,
+      "supplier_id": 3,
+      "quantity": 5,
+      "extra": {
+        "purchase_order_id": 13,
+        "expected_arrival": "2025-05-20"
+      }
+    },
+    {
+      "id": 64,
+      "sim_date": "2025-05-20",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 3,
+      "order_id": null,
+      "supplier_id": 3,
+      "quantity": 5,
+      "extra": {
+        "purchase_order_id": 14,
+        "expected_arrival": "2025-05-20"
+      }
+    },
+    {
+      "id": 65,
+      "sim_date": "2025-05-20",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 4,
+      "order_id": null,
+      "supplier_id": 4,
+      "quantity": 10,
+      "extra": {
+        "purchase_order_id": 15,
+        "expected_arrival": "2025-05-20"
+      }
+    },
+    {
+      "id": 66,
+      "sim_date": "2025-05-20",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 4,
+      "order_id": null,
+      "supplier_id": 4,
+      "quantity": 10,
+      "extra": {
+        "purchase_order_id": 16,
+        "expected_arrival": "2025-05-20"
+      }
+    },
+    {
+      "id": 67,
+      "sim_date": "2025-05-20",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 10,
+      "order_id": 6,
+      "supplier_id": null,
+      "quantity": 3,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 7
+      }
+    },
+    {
+      "id": 68,
+      "sim_date": "2025-05-20",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 10,
+      "order_id": 6,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 69,
+      "sim_date": "2025-05-20",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 12
+      }
+    },
+    {
+      "id": 70,
+      "sim_date": "2025-05-20",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 13,
+      "supplier_id": null,
+      "quantity": 4,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-05-23",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
+    },
+    {
+      "id": 71,
+      "sim_date": "2025-05-21",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 2,
+      "extra": {
+        "purchase_order_id": 11,
+        "expected_arrival": "2025-05-21"
+      }
+    },
+    {
+      "id": 72,
+      "sim_date": "2025-05-21",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 2,
+      "extra": {
+        "purchase_order_id": 12,
+        "expected_arrival": "2025-05-21"
+      }
+    },
+    {
+      "id": 73,
+      "sim_date": "2025-05-21",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 13
+      }
+    },
+    {
+      "id": 74,
+      "sim_date": "2025-05-21",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 11,
+      "order_id": 14,
+      "supplier_id": null,
+      "quantity": 3,
+      "extra": {
+        "product_name": "P3D-Classic",
+        "delivery_date": "2025-05-24",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
+    },
+    {
+      "id": 75,
+      "sim_date": "2025-05-21",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 3 x de Material (ID:1) al proveedor Proveedor A",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 76,
+      "sim_date": "2025-05-21",
+      "type": "stock",
+      "description": "Pedido #8 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 77,
+      "sim_date": "2025-05-22",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 12,
+      "order_id": 8,
+      "supplier_id": null,
+      "quantity": 3,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 7
+      }
+    },
+    {
+      "id": 78,
+      "sim_date": "2025-05-22",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 12,
+      "order_id": 8,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 79,
+      "sim_date": "2025-05-22",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 14
+      }
+    },
+    {
+      "id": 80,
+      "sim_date": "2025-05-22",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 11,
+      "order_id": 15,
+      "supplier_id": null,
+      "quantity": 4,
+      "extra": {
+        "product_name": "P3D-Classic",
+        "delivery_date": "2025-05-25",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
+    },
+    {
+      "id": 81,
+      "sim_date": "2025-05-23",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 3,
+      "extra": {
+        "purchase_order_id": 17,
+        "expected_arrival": "2025-05-23"
+      }
+    },
+    {
+      "id": 82,
+      "sim_date": "2025-05-23",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 15
+      }
+    },
+    {
+      "id": 83,
+      "sim_date": "2025-05-23",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 11,
+      "order_id": 16,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "product_name": "P3D-Classic",
+        "delivery_date": "2025-05-27",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 84,
+      "sim_date": "2025-05-23",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 44,
+      "extra": {
+        "proveedor": "Proveedor A",
+        "lead_time": 2
+      }
+    },
+    {
+      "id": 85,
+      "sim_date": "2025-05-23",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 41,
+      "extra": {
+        "proveedor": "Proveedor B",
+        "lead_time": 3
+      }
+    },
+    {
+      "id": 86,
+      "sim_date": "2025-05-23",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 3,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 44,
+      "extra": {
+        "proveedor": "Proveedor C",
+        "lead_time": 1
+      }
+    },
+    {
+      "id": 87,
+      "sim_date": "2025-05-23",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 4,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 68,
+      "extra": {
+        "proveedor": "Proveedor D",
+        "lead_time": 1
+      }
+    },
+    {
+      "id": 88,
+      "sim_date": "2025-05-23",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 5,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 20,
+      "extra": {
+        "proveedor": "Proveedor E",
+        "lead_time": 2
+      }
+    },
+    {
+      "id": 89,
+      "sim_date": "2025-05-23",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 6,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 29,
+      "extra": {
+        "proveedor": "Proveedor F",
+        "lead_time": 1
+      }
+    },
+    {
+      "id": 90,
+      "sim_date": "2025-05-23",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 7,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 6,
+      "extra": {
+        "proveedor": "Proveedor G",
+        "lead_time": 2
+      }
+    },
+    {
+      "id": 91,
+      "sim_date": "2025-05-24",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 3,
+      "order_id": null,
+      "supplier_id": 3,
+      "quantity": 44,
+      "extra": {
+        "purchase_order_id": 20,
+        "expected_arrival": "2025-05-24"
+      }
+    },
+    {
+      "id": 92,
+      "sim_date": "2025-05-24",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 4,
+      "order_id": null,
+      "supplier_id": 4,
+      "quantity": 68,
+      "extra": {
+        "purchase_order_id": 21,
+        "expected_arrival": "2025-05-24"
+      }
+    },
+    {
+      "id": 93,
+      "sim_date": "2025-05-24",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 6,
+      "order_id": null,
+      "supplier_id": 6,
+      "quantity": 29,
+      "extra": {
+        "purchase_order_id": 23,
+        "expected_arrival": "2025-05-24"
+      }
+    },
+    {
+      "id": 94,
+      "sim_date": "2025-05-24",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 16
+      }
+    },
+    {
+      "id": 95,
+      "sim_date": "2025-05-24",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 12,
+      "order_id": 17,
+      "supplier_id": null,
+      "quantity": 6,
+      "extra": {
+        "product_name": "P3D-Pro",
+        "delivery_date": "2025-05-28",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 96,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 44,
+      "extra": {
+        "purchase_order_id": 18,
+        "expected_arrival": "2025-05-25"
+      }
+    },
+    {
+      "id": 97,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 5,
+      "order_id": null,
+      "supplier_id": 5,
+      "quantity": 20,
+      "extra": {
+        "purchase_order_id": 22,
+        "expected_arrival": "2025-05-25"
+      }
+    },
+    {
+      "id": 98,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 7,
+      "order_id": null,
+      "supplier_id": 7,
+      "quantity": 6,
+      "extra": {
+        "purchase_order_id": 24,
+        "expected_arrival": "2025-05-25"
+      }
+    },
+    {
+      "id": 99,
+      "sim_date": "2025-05-25",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 17
+      }
+    },
+    {
+      "id": 100,
+      "sim_date": "2025-05-25",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 12,
+      "order_id": 18,
+      "supplier_id": null,
+      "quantity": 6,
+      "extra": {
+        "product_name": "P3D-Pro",
+        "delivery_date": "2025-05-29",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 101,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor A",
+        "lead_time": 2
+      }
+    },
+    {
+      "id": 102,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 53,
+      "extra": {
+        "proveedor": "Proveedor B",
+        "lead_time": 3
+      }
+    },
+    {
+      "id": 103,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 3,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor C",
+        "lead_time": 1
+      }
+    },
+    {
+      "id": 104,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 4,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 36,
+      "extra": {
+        "proveedor": "Proveedor D",
+        "lead_time": 1
+      }
+    },
+    {
+      "id": 105,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 5,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor E",
+        "lead_time": 2
+      }
+    },
+    {
+      "id": 106,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 6,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor F",
+        "lead_time": 1
+      }
+    },
+    {
+      "id": 107,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 7,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor G",
+        "lead_time": 2
+      }
+    },
+    {
+      "id": 108,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor A",
+        "lead_time": 2
+      }
+    },
+    {
+      "id": 109,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 53,
+      "extra": {
+        "proveedor": "Proveedor B",
+        "lead_time": 3
+      }
+    },
+    {
+      "id": 110,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 3,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor C",
+        "lead_time": 1
+      }
+    },
+    {
+      "id": 111,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 4,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 36,
+      "extra": {
+        "proveedor": "Proveedor D",
+        "lead_time": 1
+      }
+    },
+    {
+      "id": 112,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 5,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor E",
+        "lead_time": 2
+      }
+    },
+    {
+      "id": 113,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 6,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor F",
+        "lead_time": 1
+      }
+    },
+    {
+      "id": 114,
+      "sim_date": "2025-05-25",
+      "type": "purchase",
+      "description": "Compra global desde faltantes",
+      "product_id": 7,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": 12,
+      "extra": {
+        "proveedor": "Proveedor G",
+        "lead_time": 2
+      }
+    },
+    {
+      "id": 115,
+      "sim_date": "2025-05-26",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": 2,
+      "quantity": 41,
+      "extra": {
+        "purchase_order_id": 19,
+        "expected_arrival": "2025-05-26"
+      }
+    },
+    {
+      "id": 116,
+      "sim_date": "2025-05-26",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 3,
+      "order_id": null,
+      "supplier_id": 3,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 27,
+        "expected_arrival": "2025-05-26"
+      }
+    },
+    {
+      "id": 117,
+      "sim_date": "2025-05-26",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 4,
+      "order_id": null,
+      "supplier_id": 4,
+      "quantity": 36,
+      "extra": {
+        "purchase_order_id": 28,
+        "expected_arrival": "2025-05-26"
+      }
+    },
+    {
+      "id": 118,
+      "sim_date": "2025-05-26",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 6,
+      "order_id": null,
+      "supplier_id": 6,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 30,
+        "expected_arrival": "2025-05-26"
+      }
+    },
+    {
+      "id": 119,
+      "sim_date": "2025-05-26",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 3,
+      "order_id": null,
+      "supplier_id": 3,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 34,
+        "expected_arrival": "2025-05-26"
+      }
+    },
+    {
+      "id": 120,
+      "sim_date": "2025-05-26",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 4,
+      "order_id": null,
+      "supplier_id": 4,
+      "quantity": 36,
+      "extra": {
+        "purchase_order_id": 35,
+        "expected_arrival": "2025-05-26"
+      }
+    },
+    {
+      "id": 121,
+      "sim_date": "2025-05-26",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 6,
+      "order_id": null,
+      "supplier_id": 6,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 37,
+        "expected_arrival": "2025-05-26"
+      }
+    },
+    {
+      "id": 122,
+      "sim_date": "2025-05-26",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 18
+      }
+    },
+    {
+      "id": 123,
+      "sim_date": "2025-05-26",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 19,
+      "supplier_id": null,
+      "quantity": 1,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-05-29",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
+    },
+    {
+      "id": 124,
+      "sim_date": "2025-05-27",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 25,
+        "expected_arrival": "2025-05-27"
+      }
+    },
+    {
+      "id": 125,
+      "sim_date": "2025-05-27",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 5,
+      "order_id": null,
+      "supplier_id": 5,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 29,
+        "expected_arrival": "2025-05-27"
+      }
+    },
+    {
+      "id": 126,
+      "sim_date": "2025-05-27",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 7,
+      "order_id": null,
+      "supplier_id": 7,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 31,
+        "expected_arrival": "2025-05-27"
+      }
+    },
+    {
+      "id": 127,
+      "sim_date": "2025-05-27",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 32,
+        "expected_arrival": "2025-05-27"
+      }
+    },
+    {
+      "id": 128,
+      "sim_date": "2025-05-27",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 5,
+      "order_id": null,
+      "supplier_id": 5,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 36,
+        "expected_arrival": "2025-05-27"
+      }
+    },
+    {
+      "id": 129,
+      "sim_date": "2025-05-27",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 7,
+      "order_id": null,
+      "supplier_id": 7,
+      "quantity": 12,
+      "extra": {
+        "purchase_order_id": 38,
+        "expected_arrival": "2025-05-27"
+      }
+    },
+    {
+      "id": 130,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 19
+      }
+    },
+    {
+      "id": 131,
+      "sim_date": "2025-05-27",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 12,
+      "order_id": 20,
+      "supplier_id": null,
+      "quantity": 3,
+      "extra": {
+        "product_name": "P3D-Pro",
+        "delivery_date": "2025-05-30",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
+    },
+    {
+      "id": 132,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #5 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 133,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #7 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 134,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #9 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 135,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #10 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 136,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #11 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 137,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #12 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 138,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #13 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 139,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #14 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 140,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #15 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 141,
+      "sim_date": "2025-05-27",
+      "type": "stock",
+      "description": "Pedido #16 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 142,
+      "sim_date": "2025-05-28",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": 2,
+      "quantity": 53,
+      "extra": {
+        "purchase_order_id": 26,
+        "expected_arrival": "2025-05-28"
+      }
+    },
+    {
+      "id": 143,
+      "sim_date": "2025-05-28",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 2,
+      "order_id": null,
+      "supplier_id": 2,
+      "quantity": 53,
+      "extra": {
+        "purchase_order_id": 33,
+        "expected_arrival": "2025-05-28"
+      }
+    },
+    {
+      "id": 144,
+      "sim_date": "2025-05-28",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 11,
+      "order_id": 5,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 5
+      }
+    },
+    {
+      "id": 145,
+      "sim_date": "2025-05-28",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 11,
+      "order_id": 5,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 146,
+      "sim_date": "2025-05-28",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 10,
+      "order_id": 7,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "pedido_restante": 2,
+        "capacidad_restante": 0
+      }
+    },
+    {
+      "id": 147,
+      "sim_date": "2025-05-28",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 20
+      }
+    },
+    {
+      "id": 148,
+      "sim_date": "2025-05-28",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 11,
+      "order_id": 21,
+      "supplier_id": null,
+      "quantity": 6,
+      "extra": {
+        "product_name": "P3D-Classic",
+        "delivery_date": "2025-06-01",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 149,
+      "sim_date": "2025-05-28",
+      "type": "stock",
+      "description": "Pedido #17 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 150,
+      "sim_date": "2025-05-28",
+      "type": "stock",
+      "description": "Pedido #18 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 151,
+      "sim_date": "2025-05-28",
+      "type": "stock",
+      "description": "Pedido #19 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 152,
+      "sim_date": "2025-05-28",
+      "type": "stock",
+      "description": "Pedido #20 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 153,
+      "sim_date": "2025-05-28",
+      "type": "stock",
+      "description": "Pedido #21 liberado para producción.",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 154,
+      "sim_date": "2025-05-29",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 10,
+      "order_id": 7,
+      "supplier_id": null,
+      "quantity": 2,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 8
+      }
+    },
+    {
+      "id": 155,
+      "sim_date": "2025-05-29",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 10,
+      "order_id": 7,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 156,
+      "sim_date": "2025-05-29",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 12,
+      "order_id": 9,
+      "supplier_id": null,
+      "quantity": 3,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 5
+      }
+    },
+    {
+      "id": 157,
+      "sim_date": "2025-05-29",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 12,
+      "order_id": 9,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 158,
+      "sim_date": "2025-05-29",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 12,
+      "order_id": 10,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 0
+      }
+    },
+    {
+      "id": 159,
+      "sim_date": "2025-05-29",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 12,
+      "order_id": 10,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 160,
+      "sim_date": "2025-05-29",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 21
+      }
+    },
+    {
+      "id": 161,
+      "sim_date": "2025-05-29",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 22,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-06-02",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 162,
+      "sim_date": "2025-05-30",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 10,
+      "order_id": 11,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 5
+      }
+    },
+    {
+      "id": 163,
+      "sim_date": "2025-05-30",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 10,
+      "order_id": 11,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 164,
+      "sim_date": "2025-05-30",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 12,
+      "order_id": 12,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "pedido_restante": 2,
+        "capacidad_restante": 0
+      }
+    },
+    {
+      "id": 165,
+      "sim_date": "2025-05-30",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 22
+      }
+    },
+    {
+      "id": 166,
+      "sim_date": "2025-05-30",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 12,
+      "order_id": 23,
+      "supplier_id": null,
+      "quantity": 4,
+      "extra": {
+        "product_name": "P3D-Pro",
+        "delivery_date": "2025-06-02",
+        "tiempo_base": 3,
+        "dias_extra": 0,
+        "dias_totales": 3
+      }
+    },
+    {
+      "id": 167,
+      "sim_date": "2025-05-30",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 3 x de Material (ID:1) al proveedor Proveedor A",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 168,
+      "sim_date": "2025-05-30",
+      "type": "purchase",
+      "description": "Pedido de compra generado: 3 x de Material (ID:3) al proveedor Proveedor C",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": null
+    },
+    {
+      "id": 169,
+      "sim_date": "2025-05-31",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 3,
+      "order_id": null,
+      "supplier_id": 3,
+      "quantity": 3,
+      "extra": {
+        "purchase_order_id": 40,
+        "expected_arrival": "2025-05-31"
+      }
+    },
+    {
+      "id": 170,
+      "sim_date": "2025-05-31",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 12,
+      "order_id": 12,
+      "supplier_id": null,
+      "quantity": 2,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 8
+      }
+    },
+    {
+      "id": 171,
+      "sim_date": "2025-05-31",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 12,
+      "order_id": 12,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 172,
+      "sim_date": "2025-05-31",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 10,
+      "order_id": 13,
+      "supplier_id": null,
+      "quantity": 4,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 4
+      }
+    },
+    {
+      "id": 173,
+      "sim_date": "2025-05-31",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 10,
+      "order_id": 13,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 174,
+      "sim_date": "2025-05-31",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 11,
+      "order_id": 14,
+      "supplier_id": null,
+      "quantity": 3,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 1
+      }
+    },
+    {
+      "id": 175,
+      "sim_date": "2025-05-31",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 11,
+      "order_id": 14,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 176,
+      "sim_date": "2025-05-31",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 11,
+      "order_id": 15,
+      "supplier_id": null,
+      "quantity": 1,
+      "extra": {
+        "pedido_restante": 3,
+        "capacidad_restante": 0
+      }
+    },
+    {
+      "id": 177,
+      "sim_date": "2025-05-31",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 23
+      }
+    },
+    {
+      "id": 178,
+      "sim_date": "2025-05-31",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 24,
+      "supplier_id": null,
+      "quantity": 6,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-06-04",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
+    },
+    {
+      "id": 179,
+      "sim_date": "2025-06-01",
+      "type": "purchase",
+      "description": "Recepción de orden de compra",
+      "product_id": 1,
+      "order_id": null,
+      "supplier_id": 1,
+      "quantity": 3,
+      "extra": {
+        "purchase_order_id": 39,
+        "expected_arrival": "2025-06-01"
+      }
+    },
+    {
+      "id": 180,
+      "sim_date": "2025-06-01",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 11,
+      "order_id": 15,
+      "supplier_id": null,
+      "quantity": 3,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 7
+      }
+    },
+    {
+      "id": 181,
+      "sim_date": "2025-06-01",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 11,
+      "order_id": 15,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 182,
+      "sim_date": "2025-06-01",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 11,
+      "order_id": 16,
+      "supplier_id": null,
+      "quantity": 5,
+      "extra": {
+        "pedido_restante": 0,
+        "capacidad_restante": 2
+      }
+    },
+    {
+      "id": 183,
+      "sim_date": "2025-06-01",
+      "type": "production",
+      "description": "Pedido completado en producción",
+      "product_id": 11,
+      "order_id": 16,
+      "supplier_id": null,
+      "quantity": 0,
+      "extra": {
+        "estado": "completado"
+      }
+    },
+    {
+      "id": 184,
+      "sim_date": "2025-06-01",
+      "type": "production",
+      "description": "Producción parcial realizada",
+      "product_id": 12,
+      "order_id": 17,
+      "supplier_id": null,
+      "quantity": 2,
+      "extra": {
+        "pedido_restante": 4,
+        "capacidad_restante": 0
+      }
+    },
+    {
+      "id": 185,
+      "sim_date": "2025-06-01",
+      "type": "stock",
+      "description": "Día procesado",
+      "product_id": null,
+      "order_id": null,
+      "supplier_id": null,
+      "quantity": null,
+      "extra": {
+        "day": 24
+      }
+    },
+    {
+      "id": 186,
+      "sim_date": "2025-06-01",
+      "type": "order",
+      "description": "Pedido automático generado",
+      "product_id": 10,
+      "order_id": 25,
+      "supplier_id": null,
+      "quantity": 8,
+      "extra": {
+        "product_name": "P3D-Tester",
+        "delivery_date": "2025-06-05",
+        "tiempo_base": 3,
+        "dias_extra": 1,
+        "dias_totales": 4
+      }
     }
   ],
   "inventory_history": [
     {
-      "1": 8,
-      "2": 18,
-      "3": 20,
-      "4": 21,
-      "5": 16,
-      "6": 20,
-      "7": 13
+      "date": "2025-05-10",
+      "inventory": {
+        "1": 9,
+        "2": 9,
+        "3": 16,
+        "4": 9,
+        "5": 20,
+        "6": 11,
+        "7": 16
+      }
     },
     {
-      "1": 18,
-      "2": 18,
-      "3": 20,
-      "4": 21,
-      "5": 16,
-      "6": 20,
-      "7": 13
+      "date": "2025-05-11",
+      "inventory": {
+        "1": 6,
+        "2": 6,
+        "3": 13,
+        "4": 7,
+        "5": 19,
+        "6": 10,
+        "7": 16,
+        "10": 2,
+        "11": 1
+      }
+    },
+    {
+      "date": "2025-05-12",
+      "inventory": {
+        "1": 6,
+        "2": 6,
+        "3": 13,
+        "4": 12,
+        "5": 19,
+        "6": 10,
+        "7": 16,
+        "10": 2,
+        "11": 1
+      }
+    },
+    {
+      "date": "2025-05-13",
+      "inventory": {
+        "1": 4,
+        "2": 2,
+        "3": 9,
+        "4": 0,
+        "5": 15,
+        "6": 6,
+        "7": 12,
+        "10": 2,
+        "11": 1,
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-14",
+      "inventory": {
+        "1": 4,
+        "2": 4,
+        "3": 9,
+        "4": 0,
+        "5": 15,
+        "6": 6,
+        "7": 12,
+        "10": 2,
+        "11": 1,
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-15",
+      "inventory": {
+        "1": 12,
+        "2": 4,
+        "3": 9,
+        "4": 0,
+        "5": 15,
+        "6": 6,
+        "7": 12,
+        "10": 2,
+        "11": 1,
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-16",
+      "inventory": {
+        "1": 12,
+        "2": 22,
+        "3": 9,
+        "4": 0,
+        "5": 15,
+        "6": 6,
+        "7": 12,
+        "10": 2,
+        "11": 1,
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-17",
+      "inventory": {
+        "1": 3,
+        "2": 13,
+        "3": 0,
+        "4": 0,
+        "5": 15,
+        "6": 6,
+        "7": 12,
+        "10": 11,
+        "11": 1,
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-18",
+      "inventory": {
+        "1": 3,
+        "2": 13,
+        "3": 0,
+        "4": 0,
+        "5": 15,
+        "6": 6,
+        "7": 12,
+        "10": 11,
+        "11": 1,
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-19",
+      "inventory": {
+        "1": 3,
+        "2": 13,
+        "3": 0,
+        "4": 0,
+        "5": 15,
+        "6": 6,
+        "7": 12,
+        "10": 11,
+        "11": 1,
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-20",
+      "inventory": {
+        "1": 0,
+        "2": 10,
+        "3": 7,
+        "4": 20,
+        "5": 15,
+        "6": 6,
+        "7": 12,
+        "10": 14,
+        "11": 1,
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-21",
+      "inventory": {
+        "1": 4,
+        "2": 10,
+        "3": 7,
+        "4": 20,
+        "5": 15,
+        "6": 6,
+        "7": 12,
+        "10": 14,
+        "11": 1,
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-22",
+      "inventory": {
+        "1": 1,
+        "2": 7,
+        "3": 4,
+        "4": 11,
+        "5": 12,
+        "6": 3,
+        "7": 9,
+        "10": 14,
+        "11": 1,
+        "12": 7
+      }
+    },
+    {
+      "date": "2025-05-23",
+      "inventory": {
+        "1": 4,
+        "2": 7,
+        "3": 4,
+        "4": 11,
+        "5": 12,
+        "6": 3,
+        "7": 9,
+        "10": 14,
+        "11": 1,
+        "12": 7
+      }
+    },
+    {
+      "date": "2025-05-24",
+      "inventory": {
+        "1": 4,
+        "2": 7,
+        "3": 48,
+        "4": 79,
+        "5": 12,
+        "6": 32,
+        "7": 9,
+        "10": 14,
+        "11": 1,
+        "12": 7
+      }
+    },
+    {
+      "date": "2025-05-25",
+      "inventory": {
+        "1": 48,
+        "2": 7,
+        "3": 48,
+        "4": 79,
+        "5": 32,
+        "6": 32,
+        "7": 15,
+        "10": 14,
+        "11": 1,
+        "12": 7
+      }
+    },
+    {
+      "date": "2025-05-26",
+      "inventory": {
+        "1": 48,
+        "2": 48,
+        "3": 72,
+        "4": 151,
+        "5": 32,
+        "6": 56,
+        "7": 15,
+        "10": 14,
+        "11": 1,
+        "12": 7
+      }
+    },
+    {
+      "date": "2025-05-27",
+      "inventory": {
+        "1": 72,
+        "2": 48,
+        "3": 72,
+        "4": 151,
+        "5": 56,
+        "6": 56,
+        "7": 39,
+        "10": 14,
+        "11": 1,
+        "12": 7
+      }
+    },
+    {
+      "date": "2025-05-28",
+      "inventory": {
+        "1": 62,
+        "2": 144,
+        "3": 62,
+        "4": 141,
+        "5": 51,
+        "6": 51,
+        "7": 39,
+        "10": 19,
+        "11": 6,
+        "12": 7
+      }
+    },
+    {
+      "date": "2025-05-29",
+      "inventory": {
+        "1": 52,
+        "2": 134,
+        "3": 52,
+        "4": 117,
+        "5": 43,
+        "6": 43,
+        "7": 31,
+        "10": 21,
+        "11": 6,
+        "12": 15
+      }
+    },
+    {
+      "date": "2025-05-30",
+      "inventory": {
+        "1": 42,
+        "2": 124,
+        "3": 42,
+        "4": 102,
+        "5": 38,
+        "6": 38,
+        "7": 26,
+        "10": 26,
+        "11": 6,
+        "12": 20
+      }
+    },
+    {
+      "date": "2025-05-31",
+      "inventory": {
+        "1": 32,
+        "2": 114,
+        "3": 35,
+        "4": 88,
+        "5": 32,
+        "6": 32,
+        "7": 24,
+        "10": 30,
+        "11": 10,
+        "12": 22
+      }
+    },
+    {
+      "date": "2025-06-01",
+      "inventory": {
+        "1": 25,
+        "2": 104,
+        "3": 25,
+        "4": 66,
+        "5": 22,
+        "6": 22,
+        "7": 22,
+        "10": 30,
+        "11": 18,
+        "12": 24
+      }
     }
   ],
   "production_log": [
     {
-      "date": "2025-04-26",
+      "date": "2025-05-10",
       "produced": {}
     },
     {
-      "date": "2025-04-27",
+      "date": "2025-05-11",
+      "produced": {
+        "10": 2,
+        "11": 1
+      }
+    },
+    {
+      "date": "2025-05-12",
       "produced": {}
+    },
+    {
+      "date": "2025-05-13",
+      "produced": {
+        "12": 4
+      }
+    },
+    {
+      "date": "2025-05-14",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-15",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-16",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-17",
+      "produced": {
+        "10": 9
+      }
+    },
+    {
+      "date": "2025-05-18",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-19",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-20",
+      "produced": {
+        "10": 3
+      }
+    },
+    {
+      "date": "2025-05-21",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-22",
+      "produced": {
+        "12": 3
+      }
+    },
+    {
+      "date": "2025-05-23",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-24",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-25",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-26",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-27",
+      "produced": {}
+    },
+    {
+      "date": "2025-05-28",
+      "produced": {
+        "11": 5,
+        "10": 5
+      }
+    },
+    {
+      "date": "2025-05-29",
+      "produced": {
+        "10": 2,
+        "12": 8
+      }
+    },
+    {
+      "date": "2025-05-30",
+      "produced": {
+        "10": 5,
+        "12": 5
+      }
+    },
+    {
+      "date": "2025-05-31",
+      "produced": {
+        "12": 2,
+        "10": 4,
+        "11": 4
+      }
+    },
+    {
+      "date": "2025-06-01",
+      "produced": {
+        "11": 8,
+        "12": 2
+      }
     }
   ]
 }
